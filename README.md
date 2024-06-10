@@ -27,8 +27,8 @@ import pandas as pd
 from google_play_scraper import app, search
 ```
 
-```
 ### Main
+```
 def keywords():
     all_app_data = []
     unique_app_ids = set()
@@ -47,7 +47,7 @@ United States, United Kingdom, Israel, Canada, Egypt, China. Any other country t
     countries = ["us", "uk", "il", "ca", "eg", "cn"]
 ```
 > [!NOTE]
->Every search combination of categories in {words_list} combined with words in {endings} is ran for every single country in {countries}, so the leading apps returned after the search are most likely to differ and by this stragedy, we can surpass Google's scraping restrictions and extract more data!
+>Every search combination of categories in `words_list` combined with words in `endings` is ran for every single country in `countries`, so the leading apps returned after the search are most likely to differ and by this stragedy, we can surpass Google's scraping restrictions and extract more data!
 
 ### Rest of the function
 ```
@@ -67,6 +67,9 @@ United States, United Kingdom, Israel, Canada, Egypt, China. Any other country t
                     print(f"An error occurred while processing the keyword '{keyword}': {e}")
 
     return all_app_data
+```
+
+### Forming the dataset
 ```
 Call the keywords() function to start processing your list of keywords:
 ```
