@@ -9,11 +9,13 @@ Google Play Store app scraping and how to bypass data restrictions legally + REA
 --------------------------------------------------------------------------------------------------------------------------------
 
 ##Installation
+
 > [!NOTE]
 > Exclamation mark might not be needed in some coding workspaces. I used Google Colab and an error was returned when absent.
 ```
 !pip install google-play-scraper
 ```
 ##Code
+
 > [!TIP]
 > `google-play-scraper` is implemented in this code by using its `search()` feature and altering its aims to match mine. This specific code was used to extract data for classification and regression projects in Machine Learning, and so I naturally droped several attributes that didn't avail to me before forming a dataset. You are welcome to adjust this code to your project to match your academic needs. 
