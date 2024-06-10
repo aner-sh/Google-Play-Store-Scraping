@@ -70,7 +70,7 @@ United States, United Kingdom, Israel, Canada, Egypt, China. Any other country t
 ```
 
 ### Forming the dataset
-```
+
 Call the keywords() function to start processing your list of keywords:
 ```
 df_list = keywords()
