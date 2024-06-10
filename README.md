@@ -49,7 +49,7 @@ United States, United Kingdom, Israel, Canada, Egypt, China. Any other country t
 > [!NOTE]
 >Every search combination of categories in `words_list` combined with words in `endings` is ran for every single country in `countries`, so the leading apps returned after the search are most likely to differ and by this stragedy, we can surpass Google's scraping restrictions and extract more data!
 
-### Rest of the function
+### Rest Of The Function
 ```
     for a in words_list:
         for b in countries:
@@ -69,7 +69,7 @@ United States, United Kingdom, Israel, Canada, Egypt, China. Any other country t
     return all_app_data
 ```
 
-### Forming the dataset
+### Forming The Dataset
 
 Call the keywords() function to start processing your list of keywords:
 ```
@@ -83,10 +83,13 @@ Drop unnecessary columns (**for a classification or regression project in Machin
 ```
 df.drop(['minInstalls', 'sale', 'summary', 'privacyPolicy', 'saleTime', 'originalPrice', 'saleText', 'inAppProductPrice', 'developer', 'developerId', 'developer', 'developerEmail', 'developerWebsite', 'adSupported', 'developerAddress', 'genreId', 'headerImage', 'screenshots', 'video', 'videoImage', 'contentRatingDescription', 'updated', 'version', 'icon', 'categories', 'histogram', 'description', 'descriptionHTML', 'comments', 'appId', 'url'], axis=1, inplace=True)
 ```
-Reset index and call the dataframe
+Reset index and call the dataframe:
 ```
 df.reset_index(drop=True, inplace=True)  
 df
 ```
+
+## Ready Dataset After Scraping 
+The results of my `keywords()` combinations can be found [here]().
 
 
